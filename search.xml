@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>如何搭建博客</title>
+    <url>/2022/09/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="如何搭建博客"><a href="#如何搭建博客" class="headerlink" title="如何搭建博客?"></a>如何搭建博客?</h2><hr>
+<p>具体如何搭建博客我就不啰嗦了<br>参考视频：<a href="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.337.search-card.all.click">视频链接</a></p>
+<p>搭建完后可以下载不同的博客主题<br>我个人使用的是 yilia和butterfly 大家可以任选其一，当然也可以去查找不一样的主题</p>
+<p>推荐文档教程： <a href="https://butterfly.js.org/">butterfly主题链接</a></p>
+<p>详细教程文档可以百度，教程也比较详细</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>20岁</title>
+    <url>/2022/10/08/20%E5%B2%81/</url>
+    <content><![CDATA[<h2 id="关于生日"><a href="#关于生日" class="headerlink" title="关于生日"></a>关于生日</h2><p>今天十月八号了，前几天放国庆在家休息了几天、顺<br>便过了自己的二十岁生日，口罩的原因，只是喊上几<br>个亲朋好友在家吃了顿饭，想想也有点感慨，自己怎<br>么就二十岁了,都说十八岁后人生就像按了加速键,好<br>像也确实如此.明年这个时候我也应该在公司上班了.<br>还是希望自己能更加自律吧，自己约束自己, 加油.</p>
+<pre><code>&gt; 跑步是个好习惯，继续坚持
+&gt; 健身也不能少，坚持
+&gt; 身体是革命的本钱
+</code></pre>
+]]></content>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SSM总结</title>
+    <url>/2022/10/10/SSM/</url>
+    <content><![CDATA[<h1 id="关于SSM的相关总结"><a href="#关于SSM的相关总结" class="headerlink" title="关于SSM的相关总结"></a>关于SSM的相关总结</h1><hr>
+<h5 id="准备通过这篇文章来总结一下SSM框架-也算是复习总结一下"><a href="#准备通过这篇文章来总结一下SSM框架-也算是复习总结一下" class="headerlink" title="准备通过这篇文章来总结一下SSM框架,也算是复习总结一下"></a>准备通过这篇文章来总结一下SSM框架,也算是复习总结一下</h5><p>SSM框架就是 Spring + SpringMVC + MyBatis</p>
+<h3 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a><strong>Spring</strong></h3><h4 id="1-Spring是什么？"><a href="#1-Spring是什么？" class="headerlink" title="1.Spring是什么？"></a>1.Spring是什么？</h4><ul>
+<li><p>是一个轻量级的开源框架，是为解决企业应用开发的复杂性而创建的</p>
+</li>
+<li><p>是一个三层架构</p>
+<pre><code>   Web层：Spring MVC；
+
+   业务层 ：Spring的IoC；
+
+   持久层 ：Spring的JDBC、ORM、等持久层框架；
+</code></pre>
+</li>
+<li><p>Spring的核心：控制反转(IoC)和面向切面编程(AOP)；</p>
+<pre><code>   IoC（Inverse of Control，控制反转）:
+   指的是将对象的创建权交给 Spring 去创建。 使用 Spring 之前，
+   对象的创建都是由我们使用 new 创建，而使用 Spring 之后，对象的
+   创建都交给了 Spring 框架。
+
+   AOP（Aspect Oriented Programming，面向切面编程）:
+   AOP 用来封装多个类的公共行为，将那些与业务无关，
+   却为业务模块所共同调用的逻辑封装起来，减少系统的重复
+   代码，降低模块间的耦合度。另外，AOP还解决一些系统层
+   面上的问题，比如日志、事务、权限等。
+</code></pre>
+</li>
+</ul>
+<h4 id="2-Spring是干什么的？"><a href="#2-Spring是干什么的？" class="headerlink" title="2.Spring是干什么的？"></a>2.Spring是干什么的？</h4><ul>
+<li>方便解耦，简化开发；</li>
+<li>方便的对程序进行拦截、运行、监控等功能；</li>
+<li>可以对事务声明；</li>
+<li>属于一个万能的框架，方便集成各种优秀框架；</li>
+<li>降低 Java EE API 的使用难度<br>   （Spring 对 Java EE 开发中非常难用的一些 API（JDBC、JavaMail、远程调用等）都提供了封装，使这些 API 应用的难度大大降低）</li>
+<li>方便程序的测试</li>
+</ul>
+<h4 id="3-Spring怎么用？"><a href="#3-Spring怎么用？" class="headerlink" title="3.Spring怎么用？"></a>3.Spring怎么用？</h4><p>  这里我就不概述了，具体怎么用可以去百度、查API</p>
+<hr>
+<h3 id="SpringMVC"><a href="#SpringMVC" class="headerlink" title="SpringMVC"></a><strong>SpringMVC</strong></h3><h4 id="1-SpringMVC是什么？"><a href="#1-SpringMVC是什么？" class="headerlink" title="1.SpringMVC是什么？"></a>1.SpringMVC是什么？</h4><ul>
+<li><p>可以将SpringMVC看成Spring的一个组件</p>
+</li>
+<li><p>Spring MVC 是 Spring 提供的一个基于 MVC 设计模式的轻量级 Web 开发框架，本质上相当于 Servlet。<br>Spring MVC 角色划分清晰，分工明细，并且和 Spring 框架无缝结合。Spring MVC 是当今业界最主流的 Web 开发框架，以及最热门的开发技能。在 Spring MVC 框架中，Controller 替换 Servlet 来担负控制器的职责，用于接收请求，调用相应的 Model 进行处理，处理器完成业务处理后返回处理结果。Controller 调用相应的 View 并对处理结果进行视图渲染，最终客户端得到响应信息。</p>
+</li>
+<li><p>Spring MVC 框架采用松耦合可插拔的组件结构，具有高度可配置性，比起其它 MVC 框架更具有扩展性和灵活性。<br>此外，Spring MVC 的注解驱动和对 REST 风格的支持，也是它最具特色的功能。无论是在框架设计，还是扩展性、灵活性等方面都全面超越了 Struts2 等 MVC 框架。并且由于 Spring MVC 本身就是 Spring 框架的一部分，所以可以说与 Spring 框架是无缝集成，性能方面具有先天的优越性，对于开发者来说，开发效率也高于其它的 Web 框架，在企业中的应用越来越广泛，成为主流的 MVC 框架。</p>
+</li>
+<li><p>SpringMVC的优点</p>
+<ul>
+<li>清晰地角色划分，Spring MVC在Model、View和Controller方面提供了一个非常清晰的角色划分，这3个方面真正是各司其职，各负其责。</li>
+<li>灵活的配置功能，可以把类当作 Bean 通过 XML 进行配置。</li>
+<li>提供了大量的控制器接口和实现类，开发者可以使用 Spring 提供的控制器实现类，也可以自己实现控制器接口。</li>
+<li>真正做到与 View 层的实现无关。它不会强制开发者使用 JSP，可以根据项目需求使用 Velocity、FreeMarker 等技术。</li>
+<li>国际化支持</li>
+<li>面向接口编程</li>
+<li>与 Spring 框架无缝集成</li>
+</ul>
+</li>
+<li><p>流程图<br><img src="/img/springmvc%E7%9A%84%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="SpringMVC流程图"></p>
+</li>
+</ul>
+<hr>
+<h3 id="MyBatis"><a href="#MyBatis" class="headerlink" title="MyBatis"></a><strong>MyBatis</strong></h3><h4 id="1-MyBatis是什么？"><a href="#1-MyBatis是什么？" class="headerlink" title="1.MyBatis是什么？"></a>1.MyBatis是什么？</h4><ul>
+<li>MyBatis是一款优秀的持久层框架</li>
+<li>它支持定制化SQL、存储过程以及高级映射。</li>
+<li>Mybatis避免了几乎所有的JDBC代码和手动设置参数以及获取结果集。</li>
+<li>Mybatis可以使用简单的XML或注解来配置和映射原生类型、接口和Java的POJO(Plain Old Java Object普通老式Java对象)为数据库中的记录。</li>
+</ul>
+<h4 id="小小的扩展几个点"><a href="#小小的扩展几个点" class="headerlink" title="小小的扩展几个点"></a>小小的扩展几个点</h4><h4 id="持久化"><a href="#持久化" class="headerlink" title="持久化"></a>持久化</h4><p>持久化是将程序数据在持久状态和瞬时状态间转换的机制</p>
+<ul>
+<li>即把数据（如内存中的对象）保存到可永久保存的存储设备中（如磁盘）。持久化的主要应用是将内存中的对象存储在数据库中，或者存储在磁盘文件中、XML数据文件中等等。</li>
+<li>JDBC就是一种持久化机制。文件IO也是一种持久化机制。</li>
+<li>在生活中 : 将鲜肉冷藏，吃的时候再解冻的方法也是。将水果做成罐头的方法也是。</li>
+</ul>
+<p>  为什么需要持久化服务呢？那是由于内存本身的缺陷引起的</p>
+<ul>
+<li>内存断电后数据会丢失，但有一些对象是无论如何都不能丢失的，比如银行账号等，遗憾的是，人们还无法保证内存永不掉电。</li>
+<li>内存过于昂贵，与硬盘、光盘等外存相比，内存的价格要高2~3个数量级，而且维持成本也高，至少需要一直供电吧。所以即使对象不需要永久保 存，也会因为内存的容量限制不能一直呆在内存中，需要持久化来缓存到外存。</li>
+</ul>
+<h4 id="持久层"><a href="#持久层" class="headerlink" title="持久层"></a>持久层</h4><ul>
+<li>完成持久化工作的代码块 . ——&gt; dao层 【DAO (Data Access Object) 数据访问对象】</li>
+<li>大多数情况下特别是企业级应用，数据持久化往往也就意味着将内存中的数据保存到磁盘上加以固化，而持久化的实现过程则大多通过各种关系数据库来完成。</li>
+<li>不过这里有一个字需要特别强调，也就是所谓的“层”。对于应用系统而言，数据持久功能大多是必不可少的组成部分。也就是说，我们的系统中，已经天然的具备了“持久层”概念？也许是，但也许实际情况并非如此。之所以要独立出一个“持久层”的概念,而不是“持久模块”，“持久单元”，也就意味着，我们的系统架构中，应该有一个相对独立的逻辑层面，专注于数据持久化逻辑的实现.</li>
+<li>与系统其他部分相对而言，这个层面应该具有一个较为清晰和严格的逻辑边界。【说白了就是用来操作数据库存在的！】</li>
+</ul>
+<h4 id="2-为什么需要MyBatis？"><a href="#2-为什么需要MyBatis？" class="headerlink" title="2.为什么需要MyBatis？"></a>2.为什么需要MyBatis？</h4><ul>
+<li><p>Mybatis就是帮助程序猿将数据存入数据库中 , 和从数据库中取数据 .</p>
+</li>
+<li><p>传统的jdbc操作 , 有很多重复代码块 .比如 : 数据取出时的封装 , 数据库的建立连接等等… , 通过框架可以减少重复代码,提高开发效率 .</p>
+</li>
+<li><p>MyBatis 是一个半自动化的ORM框架 (Object Relationship Mapping) —&gt;对象关系映射</p>
+</li>
+<li><p>所有的事情，不用Mybatis依旧可以做到，只是用了它，所有实现会更加简单！技术没有高低之分，只有使用这个技术的人有高低之别</p>
+</li>
+<li><p>MyBatis的优点</p>
+<ul>
+<li>简单易学：本身就很小且简单。没有任何第三方依赖，最简单安装只要两个jar文件+配置几个sql映射文件就可以了，易于学习，易于使用，通过文档和源代码，可以比较完全的掌握它的设计思路和实现。</li>
+<li>灵活：mybatis不会对应用程序或者数据库的现有设计强加任何影响。sql写在xml里，便于统一管理和优化。通过sql语句可以满足操作数据库的所有需求。</li>
+<li>解除sql与程序代码的耦合：通过提供DAO层，将业务逻辑和数据访问逻辑分离，使系统的设计更清晰，更易维护，更易单元测试。sql和代码的分离，提高了可维护性。</li>
+<li>提供xml标签，支持编写动态sql。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="简单了解后我们就大概了解了什么是SSM"><a href="#简单了解后我们就大概了解了什么是SSM" class="headerlink" title="简单了解后我们就大概了解了什么是SSM"></a>简单了解后我们就大概了解了什么是SSM</h3><ul>
+<li><p>SSM 框架业务执行流程图<br>  <img src="/img/f4496bb80bd34ec990f641ea78111e2f.png" alt="SpringMVC流程图"></p>
+</li>
+<li><p>SSM程序流程</p>
+<p> 1.整个SSM框架使用maven依赖管理和构建，将其打包成war包，部署到服务器将其运行。使用spring boot框架也可以打包成jar包部署。<br> 2.SSM项目一般分为前端和后端两个部分，前端页面UI界面用bootstrap和jsp或者现在流行的vue等技术实现，后台则由SSM框架来搭建和编写，前后端交互部分则由ajax俩发送请求来处理。<br> 3.springMVC控制器，用于页面的跳转请求和对具体的视图解析，而处理不了的请求则交给tomcat服务器来处理。<br> 4.编写对应的Mappper接口以及Mapper文件，将其扫描进spring的ioc容器中，再由mybatis将对数据库的增删改查。<br> 5.在spring容器中，有三层架构–&gt;Controller，Service，Dao层，分别处理不同的事务逻辑<br> 6.有前端发送ajax请求给springMVC，后springMVC将其数据解析成json数据返回给前端页面，在前端用js解析成json在前端显示。<br> 7.增删改查操作都是有ajax请求来处理。<br> 8.具体的流程图由下图所示：</p>
+<ul>
+<li>spring将各层进行整合</li>
+<li>通过spring管理持久层的mapper（dao接口）</li>
+<li>通过spring管理业务层service，service中可以调用mapper接口 spring进行事物管理</li>
+<li>通过spring管理表现层Handle，Handle中可以调用service接口。</li>
+<li>mapper、service、Handle都是javabean<br>  <img src="/img/8c0f04f75a1d4540b517fef193899f1d.png" alt="SpringMVC流程图"></li>
+</ul>
+</li>
+</ul>
+<p>以上就是编程小白关于SSM的总结了 不过是参考百度、csdn大佬的文章,大家参考参考就好了~</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+</search>
